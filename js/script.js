@@ -10,9 +10,11 @@ accordionHeaders.forEach(accordionHeader => {
     if (accordionHeader.classList.contains("active")) {
       accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
       icon.style.transform = 'rotateX(180deg)';
+      accordionHeader.classList.remove("border-t"); // Remove the border-t class
     } else {
       accordionBody.style.maxHeight = 0;
       icon.style.transform = 'rotateX(0deg)';
+      accordionHeader.classList.add("border-t"); // Add the border-t class
     }
   });
 });
