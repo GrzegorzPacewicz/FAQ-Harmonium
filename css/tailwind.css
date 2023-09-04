@@ -20,4 +20,12 @@ body {
   .icon {
     transition: transform ease-in-out 0.3s;
   }
+
+  .accordionSingle_header {
+    @apply py-4 px-6 cursor-pointer
+  }
+
+  .accordionSingle_body {
+    @apply max-h-0 overflow-hidden transition-all duration-200 ease-out
+  }
 }

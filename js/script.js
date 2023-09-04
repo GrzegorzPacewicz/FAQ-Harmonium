@@ -20,32 +20,32 @@ accordionHeaders.forEach(accordionHeader => {
 });
 
 /// if you want close one and open second use this:
-// const accordionHeaders = document.querySelectorAll('.accordion_header');
-// const accordionBodies = document.querySelectorAll('.accordion_body');
-//
-// accordionHeaders.forEach((accordionHeader, index) => {
-//   accordionHeader.addEventListener("click", event => {
-//     // Close previously opened accordion body
-//     accordionBodies.forEach((body, idx) => {
-//       if (idx !== index) {
-//         body.style.maxHeight = 0;
-//         accordionHeaders[idx].classList.remove("active");
-//         const icon = accordionHeaders[idx].querySelector('.icon');
-//         icon.style.transform = 'rotateX(0deg)';
-//       }
-//     });
-//
-//     // Toggle the clicked accordion header and body
-//     accordionHeader.classList.toggle("active");
-//     const accordionBody = accordionHeader.nextElementSibling;
-//     const icon = accordionHeader.querySelector('.icon');
-//
-//     if (accordionHeader.classList.contains("active")) {
-//       accordionBody.style.maxHeight = accordionBody.scrollHeight + "px";
-//       icon.style.transform = 'rotateX(180deg)';
-//     } else {
-//       accordionBody.style.maxHeight = 0;
-//       icon.style.transform = 'rotateX(0deg)';
-//     }
-//   });
-// });
+const accordionSingleHeaders = document.querySelectorAll('.accordionSingle_header');
+const accordionSingleBodies = document.querySelectorAll('.accordionSingle_body');
+
+accordionSingleHeaders.forEach((accordionSingleHeader, index) => {
+  accordionSingleHeader.addEventListener("click", event => {
+    // Close previously opened accordion body
+    accordionSingleBodies.forEach((body, idx) => {
+      if (idx !== index) {
+        body.style.maxHeight = 0;
+        accordionSingleHeaders[idx].classList.remove("active");
+        const icon = accordionSingleHeaders[idx].querySelector('.icon');
+        icon.style.transform = 'rotateX(0deg)';
+      }
+    });
+
+    // Toggle the clicked accordion header and body
+    accordionSingleHeader.classList.toggle("active");
+    const accordionSingleBody = accordionSingleHeader.nextElementSibling;
+    const icon = accordionSingleHeader.querySelector('.icon');
+
+    if (accordionSingleHeader.classList.contains("active")) {
+      accordionSingleBody.style.maxHeight = accordionSingleBody.scrollHeight + "px";
+      icon.style.transform = 'rotateX(180deg)';
+    } else {
+      accordionSingleBody.style.maxHeight = 0;
+      icon.style.transform = 'rotateX(0deg)';
+    }
+  });
+});
