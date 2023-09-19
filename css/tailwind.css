@@ -28,4 +28,7 @@ body {
   .accordionSingle_body {
     @apply max-h-0 overflow-hidden transition-all duration-200 ease-out
   }
+  .swiper {
+    @apply w-[600px] h-[300px]
+  }
 }
