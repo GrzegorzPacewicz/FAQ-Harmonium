@@ -23,6 +23,10 @@
     <meta name="theme-color" content="#fafafa">
     <script defer src="js/script.js"></script>
 
+<!--    icons for nav-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <!--  Slider from swiperjs.com-->
     <link
             rel="stylesheet"
@@ -36,28 +40,32 @@
 <body>
 
 <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
-    <div>
-        <span class="text-2xl font-bold cursor-pointer">
+    <div class="flex justify-between items-center">
+        <span class="text-2xl font-bold cursor-pointer ">
             <img src="images/tailwindLogo.svg" alt="Tailwind Logo" class="h-8 inline">
             Tailwind
             </span>
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+
     </div>
-    <ul class="md:flex md:items-center">
-        <li class="mx-4">
+    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full
+    left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0">
             <a href="#" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
         </li>
-        <li class="mx-4">
+        <li class="mx-4 my-6 md:my-0">
             <a href="#" class="text-xl hover:text-cyan-500 duration-500">SERVICE</a>
         </li>
-        <li class="mx-4">
+        <li class="mx-4 my-6 md:my-0">
             <a href="#" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
         </li>
-        <li class="mx-4">
+        <li class="mx-4 my-6 md:my-0">
             <a href="#" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
         </li>
     </ul>
 </nav>
-
 
 <div class="py-5 h-screen">
     <h1 class="text-center font-semibold text-slate-900 text-3xl mb-10">Accordion Tailwind in CSS and JavaScript</h1>
