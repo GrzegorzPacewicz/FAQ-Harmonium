@@ -2,161 +2,198 @@
 <html class="no-js" lang="en">
 
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
 
-  <link rel="apple-touch-icon" href="../icon.png">
+    <link rel="apple-touch-icon" href="../icon.png">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <!--  Tailwind-->
-  <link rel="stylesheet" href="css/output.css">
-  <!--  Boxicons-->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--  Tailwind-->
+    <link rel="stylesheet" href="css/output.css">
+    <!--  Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-  <meta name="theme-color" content="#fafafa">
-  <script defer src="js/script.js"></script>
+    <meta name="theme-color" content="#fafafa">
+    <script defer src="js/script.js"></script>
 
-  <!--  Slider from swiperjs.com-->
-  <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-  />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--  Slider from swiperjs.com-->
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-  <title>FAQ</title>
+    <title>FAQ</title>
 </head>
 
 <body>
+
+<nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+    <div>
+        <span class="text-2xl font-bold cursor-pointer">
+            <img src="images/tailwindLogo.svg" alt="Tailwind Logo" class="h-8 inline">
+            Tailwind
+            </span>
+    </div>
+    <ul class="md:flex md:items-center">
+        <li class="mx-4">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
+        </li>
+        <li class="mx-4">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">SERVICE</a>
+        </li>
+        <li class="mx-4">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
+        </li>
+        <li class="mx-4">
+            <a href="#" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
+        </li>
+    </ul>
+</nav>
+
+
 <div class="py-5 h-screen">
-  <h1 class="text-center font-semibold text-slate-900 text-3xl mb-10">Accordion Tailwind in CSS and JavaScript</h1>
+    <h1 class="text-center font-semibold text-slate-900 text-3xl mb-10">Accordion Tailwind in CSS and JavaScript</h1>
 
-  <h2 class="text-center font-semibold text-slate-900 text-2xl mb-10">Multi opened </h2>
+    <h2 class="text-center font-semibold text-slate-900 text-2xl mb-10">Multi opened </h2>
 
-  <div class="max-w-2xl mx-auto px-6">
-    <div class="accordion_header flex items-center justify-between border-t">
-      <span class="font-semibold text-lg"> Lorem ipsum dolor sit.</span>
-      <i class='icon bx bx-chevron-down text-3xl'></i>
-    </div>
-    <div class="accordion_body">
-      <div class="p-4">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolore et eveniet hic, ipsam labore
-          laudantium nisi non nulla, porro quidem sint suscipit tempore unde veritatis voluptatibus? Culpa, excepturi.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="max-w-2xl mx-auto px-6">
-    <div class="accordion_header flex items-center justify-between border-t">
-      <span class="font-semibold text-lg"> Lorem ipsum dolor sit.</span>
-      <i class='icon bx bx-chevron-down text-3xl'></i>
-    </div>
-    <div class="accordion_body">
-      <div class="p-4">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolore et eveniet hic, ipsam labore
-          laudantium nisi non nulla, porro quidem sint suscipit tempore unde veritatis voluptatibus? Culpa, excepturi.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="max-w-2xl mx-auto px-6">
-    <div class="accordion_header flex items-center justify-between border-t">
-      <span class="font-semibold text-lg"> Lorem ipsum dolor sit.</span>
-      <i class='icon bx bx-chevron-down text-3xl '></i>
-    </div>
-    <div class="accordion_body">
-      <div class="p-4">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolore et eveniet hic, ipsam labore
-          laudantium nisi non nulla, porro quidem sint suscipit tempore unde veritatis voluptatibus? Culpa, excepturi.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <h2 class="text-center font-semibold text-slate-900 text-2xl mb-10 mt-20">Single opened </h2>
-
-  <div class="max-w-2xl mx-auto px-6">
-    <div class="accordionSingle_header flex items-center justify-between border-t">
-      <span class="font-semibold text-lg"> Lorem ipsum dolor sit.</span>
-      <i class='icon bx bx-chevron-down text-3xl'></i>
+    <div class="max-w-2xl mx-auto px-6">
+        <div class="accordion_header flex items-center justify-between border-t">
+            <span class="font-semibold text-lg"> Lorem ipsum dolor sit.</span>
+            <i class='icon bx bx-chevron-down text-3xl'></i>
+        </div>
+        <div class="accordion_body">
+            <div class="p-4">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolore et eveniet hic, ipsam
+                    labore
+                    laudantium nisi non nulla, porro quidem sint suscipit tempore unde veritatis voluptatibus? Culpa,
+                    excepturi.
+                </p>
+            </div>
+        </div>
     </div>
 
-    <div class="accordionSingle_body">
-      <div class="p-4">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolore et eveniet hic, ipsam labore
-          laudantium nisi non nulla, porro quidem sint suscipit tempore unde veritatis voluptatibus? Culpa, excepturi.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="max-w-2xl mx-auto px-6">
-    <div class="accordionSingle_header flex items-center justify-between border-t">
-      <span class="font-semibold text-lg"> Lorem ipsum dolor sit.</span>
-      <i class='icon bx bx-chevron-down text-3xl'></i>
-    </div>
-
-    <div class="accordionSingle_body">
-      <div class="p-4">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolore et eveniet hic, ipsam labore
-          laudantium nisi non nulla, porro quidem sint suscipit tempore unde veritatis voluptatibus? Culpa, excepturi.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="max-w-2xl mx-auto px-6">
-    <div class="accordionSingle_header flex items-center justify-between border-t">
-      <span class="font-semibold text-lg"> Lorem ipsum dolor sit.</span>
-      <i class='icon bx bx-chevron-down text-3xl'></i>
+    <div class="max-w-2xl mx-auto px-6">
+        <div class="accordion_header flex items-center justify-between border-t">
+            <span class="font-semibold text-lg"> Lorem ipsum dolor sit.</span>
+            <i class='icon bx bx-chevron-down text-3xl'></i>
+        </div>
+        <div class="accordion_body">
+            <div class="p-4">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolore et eveniet hic, ipsam
+                    labore
+                    laudantium nisi non nulla, porro quidem sint suscipit tempore unde veritatis voluptatibus? Culpa,
+                    excepturi.
+                </p>
+            </div>
+        </div>
     </div>
 
-    <div class="accordionSingle_body">
-      <div class="p-4">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolore et eveniet hic, ipsam labore
-          laudantium nisi non nulla, porro quidem sint suscipit tempore unde veritatis voluptatibus? Culpa, excepturi.
-        </p>
-      </div>
+    <div class="max-w-2xl mx-auto px-6">
+        <div class="accordion_header flex items-center justify-between border-t">
+            <span class="font-semibold text-lg"> Lorem ipsum dolor sit.</span>
+            <i class='icon bx bx-chevron-down text-3xl '></i>
+        </div>
+        <div class="accordion_body">
+            <div class="p-4">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolore et eveniet hic, ipsam
+                    labore
+                    laudantium nisi non nulla, porro quidem sint suscipit tempore unde veritatis voluptatibus? Culpa,
+                    excepturi.
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <h2 class="text-center font-semibold text-slate-900 text-2xl mb-10 mt-20">Slider from swiperjs.com</h2>
+    <h2 class="text-center font-semibold text-slate-900 text-2xl mb-10 mt-20">Single opened </h2>
 
-  <div class="max-w-2xl mx-auto px-6 max-h-screen pb-20">
+    <div class="max-w-2xl mx-auto px-6">
+        <div class="accordionSingle_header flex items-center justify-between border-t">
+            <span class="font-semibold text-lg"> Lorem ipsum dolor sit.</span>
+            <i class='icon bx bx-chevron-down text-3xl'></i>
+        </div>
 
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <div class="accordionSingle_body">
+            <div class="p-4">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolore et eveniet hic, ipsam
+                    labore
+                    laudantium nisi non nulla, porro quidem sint suscipit tempore unde veritatis voluptatibus? Culpa,
+                    excepturi.
+                </p>
+            </div>
+        </div>
+    </div>
 
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+    <div class="max-w-2xl mx-auto px-6">
+        <div class="accordionSingle_header flex items-center justify-between border-t">
+            <span class="font-semibold text-lg"> Lorem ipsum dolor sit.</span>
+            <i class='icon bx bx-chevron-down text-3xl'></i>
+        </div>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+        <div class="accordionSingle_body">
+            <div class="p-4">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolore et eveniet hic, ipsam
+                    labore
+                    laudantium nisi non nulla, porro quidem sint suscipit tempore unde veritatis voluptatibus? Culpa,
+                    excepturi.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-2xl mx-auto px-6">
+        <div class="accordionSingle_header flex items-center justify-between border-t">
+            <span class="font-semibold text-lg"> Lorem ipsum dolor sit.</span>
+            <i class='icon bx bx-chevron-down text-3xl'></i>
+        </div>
+
+        <div class="accordionSingle_body">
+            <div class="p-4">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut dolore et eveniet hic, ipsam
+                    labore
+                    laudantium nisi non nulla, porro quidem sint suscipit tempore unde veritatis voluptatibus? Culpa,
+                    excepturi.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-center font-semibold text-slate-900 text-2xl mb-10 mt-20">Slider from swiperjs.com</h2>
+
+    <div class="max-w-2xl mx-auto px-6 max-h-screen pb-20">
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
-          </div>
+        </div>
 
 
     </div>
